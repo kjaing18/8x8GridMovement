@@ -1,0 +1,12 @@
+.sprites{
+	/*			
+	<img class="sprites" id="player0" alt="IdleCat" src="png/IdleCat.png">
+	<img class="sprites" id="player1" alt="IdleDog" src="png/IdleDog.png">
+	*/
+	width: 7em;
+	height: auto;
+}
+div{
+	background-image: url("png/Tile.png");
+	background-repeat: repeat;
+}
