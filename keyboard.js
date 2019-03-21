@@ -1,6 +1,6 @@
 /* globals data, handleWrap, draw */
 
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keyup', function (event) {
   if (event.key === 'w') {
     data.player[0].y--;
   }
