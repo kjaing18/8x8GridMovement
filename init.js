@@ -8,9 +8,9 @@ function createPlayer (playerNumber) {
   img.alt = player.alt;
   img.src = player.src;
   document.body.appendChild(img);
-  draw();
 }
 
 for (var i = 0; i < data.player.length; i++) {
   createPlayer(i);
 }
+draw();
