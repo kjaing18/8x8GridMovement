@@ -32,8 +32,8 @@
 	<img class="sprites" id="player0" alt="IdleCat" src="png/IdleCat.png">
 	<img class="sprites" id="player1" alt="IdleDog" src="png/IdleDog.png">
 	*/
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 .background-tile{
 	background-image: url("png/Tile.png");
