@@ -7,27 +7,27 @@
 
 */
 
-.arrow{
+.arrow {
 	width: 3em;
 	height: auto;
 }
 
-.up{
-	-webkit-transform: rotate( 90deg );
-			transform: rotate( 90deg );
+.up {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
-.right{
+.right {
 	-webkit-transform: rotate(180deg);
-			transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
-.down{
-	-webkit-transform: rotate( 270deg );
-			transform: rotate( 270deg );
+.down {
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
 }
 
-.sprites{
+.sprites {
 	/*			
 	<img class="sprites" id="player0" alt="IdleCat" src="png/IdleCat.png">
 	<img class="sprites" id="player1" alt="IdleDog" src="png/IdleDog.png">
@@ -35,7 +35,7 @@
 	width: auto;
 	height: 100%;
 }
-.background-tile{
+.background-tile {
 	background-image: url("png/Tile.png");
 	background-repeat: repeat;
 }
