@@ -2,25 +2,25 @@
 /* globals data */
 
 function handleWrap () {
-  for (var i = 0; i < data.players.length; i++) {
-    if (data.players[i].x < 0) {
-      data.players[i].x = 7;
+  for (var i = 0; i < data.player.length; i++) {
+    if (data.player[i].x < 0) {
+      data.player[i].x = 7;
     }
-    if (data.players[i].x > 7) {
-      data.players[i].x = 0;
+    if (data.player[i].x > 7) {
+      data.player[i].x = 0;
     }
-    if (data.players[i].y < 0) {
-      data.players[i].y = 7;
+    if (data.player[i].y < 0) {
+      data.player[i].y = 7;
     }
-    if (data.players[i].y > 7) {
-      data.players[i].y = 0;
+    if (data.player[i].y > 7) {
+      data.player[i].y = 0;
     }
   }
 }
 
 function draw () {
-  for (var i = 0; i < data.players.length; i++) {
+  for (var i = 0; i < data.player.length; i++) {
     var player = document.getElementById('player' + i);
-    player.appendChild(document.getElementById('cell-' + data.players[i].x + '-' + data.players[i].y));
+    document.getElementById('cell-' + data.player[i].x + '-' + data.player[i].y).appendChild(player);
   }
 }

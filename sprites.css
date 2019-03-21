@@ -32,7 +32,7 @@
 	<img class="sprites" id="player0" alt="IdleCat" src="png/IdleCat.png">
 	<img class="sprites" id="player1" alt="IdleDog" src="png/IdleDog.png">
 	*/
-	width: 7em;
+	width: 100%;
 	height: auto;
 }
 .background-tile{
