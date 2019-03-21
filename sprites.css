@@ -1,3 +1,10 @@
+.arrow{
+	width: 3em;
+	height: auto;
+	/*
+	http://chittagongit.com/icon/arrow-button-icon-8.html
+	*/
+}
 .sprites{
 	/*			
 	<img class="sprites" id="player0" alt="IdleCat" src="png/IdleCat.png">
