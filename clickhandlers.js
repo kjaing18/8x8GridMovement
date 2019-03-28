@@ -1,4 +1,4 @@
-/* globals data, handleWrap, draw */
+/* globals data, stopWrap, draw */
 
 var playerOneDown = document.getElementById('p1Down');
 var playerTwoDown = document.getElementById('p2Down');
@@ -10,49 +10,66 @@ var playerOneRight = document.getElementById('p1Right');
 var playerTwoRight = document.getElementById('p2Right');
 
 playerOneDown.onclick = function () {
+  if (data.player[0].animating) {
+    return;
+  }
   data.player[0].y++;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerTwoDown.onclick = function () {
-  // decrement row
+  if (data.player[1].animating) {
+    return;
+  }
   data.player[1].y++;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerOneUp.onclick = function () {
-  // increment row
+  if (data.player[0].animating) {
+    return;
+  }
   data.player[0].y--;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerTwoUp.onclick = function () {
-  // increment row
+  if (data.player[1].animating) {
+    return;
+  }
   data.player[1].y--;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerOneLeft.onclick = function () {
-  // decrement column
+  if (data.player[0].animating) {
+    return;
+  }
   data.player[0].x--;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerTwoLeft.onclick = function () {
-  // decrement column
+  if (data.player[1].animating) {
+    return;
+  }
   data.player[1].x--;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerOneRight.onclick = function () {
-  // increment column
+  if (data.player[0].animating) {
+    return;
+  }
   data.player[0].x++;
-  handleWrap();
+  stopWrap();
   draw();
 };
 playerTwoRight.onclick = function () {
-  // increment column
+  if (data.player[1].animating) {
+    return;
+  }
   data.player[1].x++;
-  handleWrap();
+  stopWrap();
   draw();
 };
